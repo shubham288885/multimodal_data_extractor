@@ -1,0 +1,22 @@
+document_extraction/
+├── app/
+│   ├── frontend/
+│   │   ├── pages/
+│   │   └── streamlit_app.py
+├── core/
+│   ├── document_processor/
+│   │   ├── __init__.py
+│   │   ├── extractor.py
+│   │   ├── ocr.py
+│   │   └── parser.py
+│   ├── embedding/
+│   │   ├── __init__.py
+│   │   └── embedder.py
+│   └── vector_store/
+│       ├── __init__.py
+│       └── store.py
+├── docker/
+│   ├── Dockerfile
+│   └── docker-compose.yml
+├── requirements.txt
+└── README.md 

@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  document_search:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ../:/app
+    environment:
+      - NVIDIA_API_KEY=${NVIDIA_API_KEY}
+      - MILVUS_URI=${MILVUS_URI}
+      - MILVUS_TOKEN=${MILVUS_TOKEN}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu] 

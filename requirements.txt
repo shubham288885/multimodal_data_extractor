@@ -1,0 +1,13 @@
+streamlit>=1.24.0
+torch
+transformers
+sentence-transformers
+PyMuPDF
+opencv-python
+pillow
+numpy
+requests
+python-dotenv
+pymilvus
+openai>=1.0.0
+python-dotenv>=0.19.0
