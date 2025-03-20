@@ -1,0 +1,32 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.11:8501
+
+python : 2025-03-20 01:20:53.583 Uncaught app execution
+At line:1 char:25
++ ... ATH = $PWD; python -m streamlit run app/frontend/streamlit_app.py 2>& ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2025-03-20 01:2...t app execution:String) [], RemoteExce 
+   ption
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Carbon6_main\multimodal_pdf_extractor\fresh_env\Lib\site-packages\strea
+mlit\runtime\scriptrunner\exec_code.py", line 121, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+  File "C:\Users\Admin\Desktop\Carbon6_main\multimodal_pdf_extractor\fresh_env\Lib\site-packages\strea
+mlit\runtime\scriptrunner\script_runner.py", line 593, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\Admin\Desktop\Carbon6_main\multimodal_pdf_extractor\multimodal_data_extractor\app\fro
+ntend\streamlit_app.py", line 9, in <module>
+    from core.pipeline.ingestion_pipeline import IngestionPipeline
+  File "C:\Users\Admin\Desktop\Carbon6_main\multimodal_pdf_extractor\multimodal_data_extractor\core\pi
+peline\ingestion_pipeline.py", line 1, in <module>
+    from core.document_processor.extractor import DocumentExtractor
+  File "C:\Users\Admin\Desktop\Carbon6_main\multimodal_pdf_extractor\multimodal_data_extractor\core\do
+cument_processor\extractor.py", line 2, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'

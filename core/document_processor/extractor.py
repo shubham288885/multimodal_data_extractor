@@ -1,4 +1,4 @@
-import fitz  # PyMuPDF
+from .fitz_wrapper import fitz  # Safe import of PyMuPDF
 import cv2
 import numpy as np
 from PIL import Image
